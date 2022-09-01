@@ -103,11 +103,12 @@ class DevByteViewModel(application: Application) : AndroidViewModel(application)
             _isNetworkErrorShown.value = false
 
         } 
-    }
+    
     catch (networkError: IOException) {
             // Show a Toast error message and hide the progress bar.
             _eventNetworkError.value = true
         }
+    }
     /**
      * Resets the network error flag.
      */
